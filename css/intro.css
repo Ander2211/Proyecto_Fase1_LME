@@ -1,0 +1,104 @@
+/*Los colores lo discutiremos en el grupo*/
+/*Copia desde aqui*/
+
+
+/*No borrar esto son variables para los colores
+*/
+:root {
+    --primary: ;
+    --secundario: ;
+    --fuente:
+}
+
+/* tamaños (esto es para @media )*/
+/* 480=telefono(opcional)
+768=tablet(obligatorio)
+1400=pc(este no, por que es el que estamos usando)
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+    padding: 1em;
+    color: white;
+}
+
+header {
+    background: #333;
+}
+
+nav {
+    background: #000000e3;
+    position: sticky;
+    top: 0;
+}
+
+section {
+    background: #555;
+    flex: 2;
+}
+
+aside {
+    background: #666;
+    flex: 1;
+}
+
+footer {
+    background: #333;
+}
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.vista{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+@media (max-width: 768px/*aqui se define el tamaño de las pantallas*/) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    section {
+        order: 2;
+    }
+}
+/*Hasta aqui*/
+
+
+
+
+/*Empiesen a trabajar desde aqui*/
+
+
+
+
+/*el estilo tambien se borra*/
+.morado {
+    padding: 2rem;
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 100rem;
+}
+
+
+
+
+
+
+
+
+
