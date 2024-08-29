@@ -14,7 +14,8 @@ ejemplo: background-color: var(--primario);
     --barro:#AFAE9E;
     --claro1:#F1E6D2;
     --claro2:#C19A6B;
-    --fuente:;
+    --color-fuente:#D4AF37;
+    --fuente-principal:'Times New Roman', Times, serif;
 }
 
 /* tamaños (esto es para @media )*/
@@ -25,7 +26,11 @@ ejemplo: background-color: var(--primario);
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 header,
@@ -38,30 +43,31 @@ footer {
 }
 
 header {
-    background: #333;
+    background: var(--azul);
+    color: var(--color-fuente);
 }
 
 nav {
-    background: #000000e3;
+    background: #FFFFF0;
     position: sticky;
     top: 0;
 }
 
-section {
-    background: #555;
+#info {
     flex: 2;
-}
-
-aside {
-    background: #666;
-    flex: 1;
+    
 }
 
 footer {
-    background: #333;
+    background: var(--azul);
+}
+.title-1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .title{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-fuente);
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
 }
 .vista{
     display: flex;
@@ -72,6 +78,9 @@ footer {
 .main-content {
     display: flex;
     flex: 1;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen */
+
 }
 
 
@@ -82,7 +91,6 @@ footer {
 }
 .active:hover{
     padding: 7px;
-    
     
 }
 
@@ -105,7 +113,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.5rem;
-    margin-top: -1.4rem; 
+    margin-top: -1.2rem; 
     transition: visibility 0s, opacity 0.3s ease-in-out; 
 }
 
@@ -114,15 +122,25 @@ footer {
     opacity: 1; /* Hacer el emoji visible */
 }
 
-
 @media (max-width: 768px/*aqui se define el tamaño de las pantallas*/) {
     .main-content {
         flex-direction: column;
     }
 
-    section {
+    #info {
         order: 2;
     }
+}
+
+.title{
+    color: var(--color-fuente);
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
+}
+
+#info {
+    background:var(--morado);
+     /* Espacio superior para que el título se acomode */
+    min-height: calc(100vh - 10rem); /* Asegura que el h1 no baje más allá de la sección */
 }
 /*Hasta aqui*/
 
