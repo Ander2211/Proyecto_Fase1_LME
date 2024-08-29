@@ -3,11 +3,18 @@
 
 
 /*No borrar esto son variables para los colores
+---Para usar estas variables en css tienes que poner por ejemplo en:
+color :var();  dentro de los parentesis va ir '--primario'
+
+ejemplo: background-color: var(--primario);
 */
 :root {
-    --primary: ;
-    --secundario: ;
-    --fuente:
+    --azul: #1F3B73;
+    --morado:#4B296B ;
+    --barro:#AFAE9E;
+    --claro1:#F1E6D2;
+    --claro2:#C19A6B;
+    --fuente:;
 }
 
 /* tamaños (esto es para @media )*/
@@ -67,6 +74,47 @@ footer {
     flex: 1;
 }
 
+
+.active{
+    transition: all 0.33s ease-out;
+    border-bottom: 1px solid ;
+    padding-bottom: 0px;
+}
+.active:hover{
+    padding: 7px;
+    
+    
+}
+
+
+/* Añadir espacio debajo de los elementos para el emoji */
+.navbar-nav .nav-item {
+    margin-bottom: 0.2rem; /* Ajusta este valor según el tamaño del emoji */
+}
+
+.hover-item {
+    position: relative;
+    display: inline-block;
+}
+
+.emoji {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    margin-top: -1.4rem; 
+    transition: visibility 0s, opacity 0.3s ease-in-out; 
+}
+
+.hover-item:hover .emoji {
+    visibility: visible;
+    opacity: 1; /* Hacer el emoji visible */
+}
+
+
 @media (max-width: 768px/*aqui se define el tamaño de las pantallas*/) {
     .main-content {
         flex-direction: column;
@@ -82,6 +130,7 @@ footer {
 
 
 /*Empiesen a trabajar desde aqui*/
+
 
 
 
