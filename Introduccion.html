@@ -1,0 +1,263 @@
+<!-- 
+-No borres nada de aqui.
+-Copia y pega todo en otro html y los estilos tambien.
+-No usen el mismo archivo css, intro.css es de esta pagina.
+-La mayoria del diseño responsive ya esta resuelta, pero algunas img o tamaños fuentes se tienen que corregir en @media por que se salen del tamaño de pantalla como tablet y mas comun en celular 
+-Hablando de img se tiene que poner para que no solo vaya texto minimo unas 5 cada una, opcional pueden usar Carousel y Card de boostrap para que se vea mejor 
+-No procuren hacer tanto css por eso esta boostrap (tengan la documetacion en la mano que el objetivo de boostrap es reducir el tiempo al escribir css ):
+    ~tamaños usen Sizing
+    ~para margin y padding usen Spacing seria: m-1(seria 16px), p-1(es lo mismo)
+    ~tamaño de texto usen Text
+    y asi
+-Si algo esta mal y no lo pueden arreglar o tienen duda o sugerencia me llaman 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al Renacimiento</title> <!-- Cambia el Nombre. Segun de lo que te toco-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/introduccion.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="vista">
+        <header>
+            <h2 class="fs-3 title">El Renacimiento</h2>
+        </header>
+
+        
+        <!-- Navbar -->
+        <nav class="z-3 navbar navbar-expand-lg navbar-light  position-sticky">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                    <ul class="navbar-nav fs-3">
+                        <li class="nav-item">
+                            <a class="nav-link active  px-sm-5 fw-medium" href="Introduccion.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-sm-5 hover-item fw-medium" href="#">Arte
+                                <span class="emoji">🖼️</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-sm-5 hover-item fw-medium" href="#">Ciencia
+                                <span class="emoji">🧪</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-sm-5 hover-item fw-medium" href="#">Legado
+                                <span class="emoji">🏙️</span>
+                            </a>
+                        </li>
+
+
+                        
+                        <!--Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Extras
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link px-sm-5 fs-4 hover-item fw-medium" href="galeria.html">Galeria
+                                        <span class="emoji"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-sm-5 fs-4  fw-medium" href="creadores.html">Creadores
+                                        <span class="emoji">🧑🏻‍💻</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link px-sm-5 fs-4  fw-medium" href="contacto.html">Contactos
+                                        
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <!--Fin Dropdown-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--final de Navbar -->
+
+        <div class="Adan">
+            <div id="carouselExampleSlidesOnly w-100" class="carousel slide pointer-event" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div  class="carousel-item active " data-bs-interval="1800">
+                        <img loading="lazy" src="img/La-creacion-de-Adan.webp" alt="" width="100%" height="auto">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3800">
+                        <img loading="lazy" src="img/la-ultima-cena-da-Vinci.jpg" alt="Ultima cena de Leonardo da Vinci " width="100%" height="1088px">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3800">
+                        <img loading="lazy" src="img/arte-renacentista-e1571802362634.jpg" alt="" width="100%" height="1088px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Contenido principal -->
+
+
+            <section class="conte" data-aos="fade-down">
+                <h1 class="fw-medium text-center tema ">El Renacimiento</h1>
+            </section>
+
+            <section id="info">
+                <h2 class="p-2 fs-1">Introducción general al Renacimiento.</h2>
+                <!-- /*Empiesen a trabajar desde aqui*/ -->
+                <p class="mx-xl-5 my-3 fs-4">El Renacimiento fue un movimiento cultural que se desarrolló en Europa
+                    entre los siglos XIV y XVII,
+                    marcando la transición de la Edad Media a la Edad Moderna. Caracterizado por el redescubrimiento de
+                    la Antigüedad clásica, este período promovió el humanismo, colocando al ser humano en el centro del
+                    conocimiento. Destacó por avances en las artes, como el uso de la perspectiva en la pintura, y en la
+                    ciencia, con figuras como Copérnico y Galileo. La invención de la imprenta permitió la difusión de
+                    estas ideas, dejando un legado que sigue influyendo en la cultura occidental.</p>
+
+                <div class="fs-4">
+                    <h1></h1>
+                    <ol>
+                        <li><b>Humanismo:</b> El Renacimiento promovió el humanismo, una corriente de pensamiento que
+                            ponía al ser humano en el centro del universo. Se rescató la dignidad y el valor de la
+                            persona, y se enfatizó el potencial humano para lograr grandes cosas.</li><br>
+                        <li><b>Redescubrimiento de la Antigüedad Clásica:</b> Los intelectuales del Renacimiento
+                            valoraron y estudiaron las obras de la Grecia y Roma antiguas, adoptando y adaptando sus
+                            ideas en la literatura, la filosofía, y las artes.</li><br>
+                        <li><b>Avances en las Artes:</b> En el Renacimiento se desarrolló una nueva forma de arte, que
+                            incluyó el uso de la perspectiva en la pintura, dando una sensación de profundidad y
+                            realismo. Artistas como Leonardo da Vinci, Miguel Ángel y Rafael son algunos de los
+                            exponentes más conocidos.</li><br>
+                        <li><b>Progreso Científico:</b> Este período fue testigo de importantes avances científicos,
+                            impulsados por una curiosidad renovada por el mundo natural. Se realizaron descubrimientos
+                            en campos como la astronomía, la anatomía y la física, con figuras como Copérnico y Galileo
+                            desafiando las concepciones medievales.</li><br>
+                        <li><b>Innovaciones en la Educación:</b> Se promovió la educación basada en un currículum que
+                            incluía las humanidades, las ciencias, la filosofía y las artes, a diferencia de la
+                            educación medieval centrada principalmente en la teología.</li><br>
+                        <li><b>Difusión del Conocimiento:</b> La invención de la imprenta por Johannes Gutenberg en el
+                            siglo XV facilitó la difusión del conocimiento, permitiendo que las ideas del Renacimiento
+                            llegaran a un público más amplio.</li><br>
+                    </ol>
+                </div>
+
+
+                <div class="nosotros">
+                    <div class="nosotros__contenido">
+                        <h2>Contexto histórico</h2>
+                        <p class="fs-3">
+                            El Renacimiento surgió en Europa durante los siglos XIV al XVII como una respuesta a la
+                            crisis del feudalismo, la caída de Constantinopla y el declive de la influencia de la
+                            Iglesia. Este período marcó un retorno a los valores y conocimientos de la Antigüedad
+                            clásica, impulsado por el humanismo que centraba la atención en el potencial y la dignidad
+                            del ser humano. Con epicentro en Italia, y posteriormente expandiéndose por toda Europa, el
+                            Renacimiento promovió avances significativos en las artes, ciencias y educación, sentando
+                            las bases de la modernidad y transformando profundamente la cultura europea.
+                        </p>
+                        <p class="fs-3">
+                            El Renacimiento fue un movimiento cultural y artístico que comenzó en Italia en el siglo XIV
+                            y se extendió por Europa hasta el siglo XVII. Nació como una reacción al estancamiento de la
+                            Edad Media, impulsado por la crisis del feudalismo y un renovado interés en la antigüedad
+                            grecorromana. Este período se caracterizó por el florecimiento del humanismo, que destacó la
+                            capacidad del ser humano para razonar y crear. Además, trajo consigo avances en la ciencia,
+                            la educación y las artes, influyendo en la transformación de la sociedad europea hacia la
+                            modernidad.
+                        </p>
+                    </div>
+                    <div class="nosotros__img">
+                        <img loading="lazy" src="img/Mona-Lisa-by-Leonardo-da-Vinci-1140x1699 (1).jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="causa p-4 my-3">
+                    <h2>Causas</h2>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-12 g-3">
+                                <div class="card">
+                                    <img loading="lazy" src="img/feudalismo.webp" class="card-img-top" alt="Image 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Crisis del Feudalismo:</h5>
+                                        <p class="card-text"> La decadencia del sistema feudal y el auge de las ciudades
+                                            impulsaron el desarrollo de una nueva clase social, la burguesía, que
+                                            promovió el comercio, la educación y las artes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 g-3">
+                                <div class="card">
+                                    <img loading="lazy" src="img/01-asedio-constantinopla-foto-age-fotostock_1d15c176_1280x853.jpg"
+                                        class="card-img-top" alt="Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Caída de Constantinopla (1453):</h5>
+                                        <p class="card-text">La toma de esta ciudad por los turcos otomanos llevó a
+                                            muchos intelectuales bizantinos a huir a Europa occidental, llevando consigo
+                                            manuscritos y conocimientos de la antigua Grecia y Roma.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 g-3">
+                                <div class="card">
+                                    <img loading="lazy" src="img/humanismo-wide_webp.webp" class="card-img-top mt-4 pt-3"
+                                        alt="Image 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Humanismo:</h5>
+                                        <p class="card-text"> La pérdida de influencia de la Iglesia católica debido a
+                                            problemas internos y el surgimiento de nuevas ideas religiosas cuestionaron
+                                            las antiguas doctrinas y fomentaron el pensamiento crítico.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+        </section>
+    </div>
+
+
+
+
+    <footer class="d-flex justify-content-center align-items-center">
+        <div>
+            <p class="m-0 fs-3">Footer</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+<!--TODO-->

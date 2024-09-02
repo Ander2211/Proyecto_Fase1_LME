@@ -1,0 +1,176 @@
+
+:root {
+    --azul: #1F3B73;
+    --morado:#4B296B ;
+    --barro:#AFAE9E;
+    --claro1:#F1E6D2;
+    --claro2:#C19A6B;
+    --color-fuente:#D4AF37;
+    --fuente-principal:'Times New Roman', Times, serif;
+}
+
+/* tamaños (esto es para @media )*/
+/* 480=telefono(opcional)
+768=tablet(obligatorio)
+1400=pc(este no, por que es el que estamos usando)
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+    padding: 1em;
+    color: white;
+}
+
+header {
+    background: var(--azul);
+    color: var(--color-fuente);
+}
+
+nav {
+    background: #FFFFF0;
+    position: sticky;
+    top: 0;
+}
+
+#info {
+    flex: 2;
+    
+}
+
+footer {
+    background: var(--azul);
+}
+.title-1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-fuente);
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
+}
+.vista{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen */
+
+}
+
+
+.active{
+    transition: all 0.33s ease-out;
+    border-bottom: 1px solid ;
+    padding-bottom: 0px;
+}
+.active:hover{
+    padding: 7px;
+    
+}
+
+
+/* Añadir espacio debajo de los elementos para el emoji */
+.navbar-nav .nav-item {
+    margin-bottom: 0.2rem; /* Ajusta este valor según el tamaño del emoji */
+}
+
+.hover-item {
+    position: relative;
+    display: inline-block;
+}
+
+.emoji {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    margin-top: -1.2rem; 
+    transition: visibility 0s, opacity 0.3s ease-in-out; 
+}
+
+.hover-item:hover .emoji {
+    visibility: visible;
+    opacity: 1; /* Hacer el emoji visible */
+}
+
+@media (max-width: 768px/*aqui se define el tamaño de las pantallas*/) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    #info {
+        order: 2;
+    }
+}
+
+.title{
+    color: var(--color-fuente);
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
+}
+
+#info {
+    background:var(--morado);
+     /* Espacio superior para que el título se acomode */
+    min-height: calc(100vh - 10rem); /* Asegura que el h1 no baje más allá de la sección */
+}
+/*Hasta aqui*/
+
+
+
+
+/*Empiesen a trabajar desde aqui*/
+
+
+
+
+
+/*el estilo tambien se borra*/
+.morado {
+    padding: 2rem;
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 100rem;
+}
+
+
+/*Formulario estilos*/
+
+.formulario{
+    width: 50%;
+    margin: 3rem;
+    padding: 3rem 2rem;
+    border-radius: 30px;
+    border:1px solid var(--claro1) ;
+}
+
+#mi-textarea{
+    overflow: auto;
+    height: 220px;
+}
+
+
+
+
+
+
+/*FIN Formulario estilos*/

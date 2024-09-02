@@ -1,0 +1,298 @@
+/*Los colores lo discutiremos en el grupo*/
+/*Copia desde aqui*/
+
+
+/*No borrar esto son variables para los colores
+*/
+:root {
+    --azul: #1F3B73;
+    --morado:#4B296B ;
+    --barro:#AFAE9E;
+    --claro1:#F1E6D2;
+    --claro2:#C19A6B;
+    --color-fuente:#D4AF37;
+    --fuente-principal:'Times New Roman', Times, serif;
+}
+/* tamaños (esto es para @media )*/
+/* 480=telefono(opcional)
+768=tablet(obligatorio)
+1400=pc(este no, por que es el que estamos usando)
+*/
+
+body {
+    margin: 0;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+    padding: 1em;
+    color: white;
+}
+
+header {
+    background: var(--azul);
+    color: var(--color-fuente);
+}
+
+nav {
+    background: #FFFFF0;
+    position: sticky;
+    top: 0;
+}
+
+#info {
+    flex: 2;
+    
+}
+
+footer {
+    background: var(--azul);
+}
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-fuente);
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
+}
+.vista{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen */
+
+}
+
+
+.active{
+    transition: all 0.33s ease-out;
+    border-bottom: 1px solid ;
+    padding-bottom: 0px;
+}
+.active:hover{
+    padding: 7px;
+    
+}
+
+
+/* Añadir espacio debajo de los elementos para el emoji */
+.navbar-nav .nav-item {
+    margin-bottom: 0.2rem; /* Ajusta este valor según el tamaño del emoji */
+}
+
+.hover-item {
+    position: relative;
+    display: inline-block;
+}
+
+.emoji {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    margin-top: -1.2rem; 
+    transition: visibility 0s, opacity 0.3s ease-in-out; 
+}
+
+.hover-item:hover .emoji {
+    visibility: visible;
+    opacity: 1; /* Hacer el emoji visible */
+}
+
+@media (max-width: 768px/*aqui se define el tamaño de las pantallas*/) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    #info {
+        order: 2;
+    }
+}
+/*Hasta aqui*/
+
+
+
+
+/*Empiesen a trabajar desde aqui*/
+
+
+
+
+
+
+/* Estilo para el h1 */
+.tema {
+    font-family:var(--fuente-principal);
+    font-size: 33rem;
+    font-weight: bold;
+    text-align: center;
+    color:var(--color-fuente);
+    z-index: 10; /* Asegura que el título esté sobre la imagen */
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
+
+}
+
+/* Control de la altura mínima de la sección */
+#info {
+    background:var(--morado);
+    min-height: calc(100vh - 10rem); 
+}
+
+
+.conte{
+    top: -30rem;
+    display: block;
+    position:absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+h2{
+    color: var(--color-fuente);
+    text-shadow: 2px 2px 7px rgba(186,154,48,0.71);
+    font-family: var(--fuente-principal);
+}
+
+
+#info h1{
+    font-family: var(--fuente-principal);
+}
+#info{
+    padding: 0;
+}
+
+
+@media (min-width: 1440px) {
+    ol{
+        margin-inline:10rem ;
+    }
+    .tema{
+        font-size: 7rem;
+    }
+    .nosotros{
+    margin-right: 10rem;
+    }
+    
+}
+
+
+
+
+.nosotros {
+    max-width: 100%;
+    
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+
+@media (min-width: 768px) {
+    .nosotros {
+        margin-inline:5rem;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+
+    .nosotros__img img{
+        width: 10%;
+    }
+
+}
+
+.nosotros__img {
+    grid-row: 1/2;
+    
+}
+
+@media (min-width: 768px) {
+    .nosotros__img {
+        grid-column: 2/3;
+        
+    }
+}
+
+
+.nosotros__img img{
+    width: 40%;
+display: inline;
+}
+
+
+
+@media (max-width: 768px) {
+    .tema {
+        font-size: 4rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+        top: 40vh; /* Ajusta la posición vertical en pantallas pequeñas */
+    }
+    .conte{
+        top: -10rem;
+    }
+
+    .nosotros__img img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .tema {
+        font-size: 2rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+        top: 40vh; /* Ajusta la posición vertical en pantallas pequeñas */
+    }
+    .conte{
+        top: -5rem;
+    }
+    .nosotros {
+        
+        margin-inline:1rem;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    .nosotros__img img{
+        margin-inline:3rem;
+        width: 220px;
+    }
+}
+
+.causa{ 
+
+    border: 3px solid var(--color-fuente) ;
+    border-radius: 23px 23px 66px 0px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin-bottom: 20px; /* Espacio entre las cards en mobile */
+    }
+}
+.card-img-top{
+
+    transition: all 0.33s ease-out;
+    
+}
+
+.card-img-top:hover{
+    transform: scale(1.03);
+}
+
+@media (min-width:1440px ) {
+    .causa{
+        margin-inline: 10rem;
+    }
+}
