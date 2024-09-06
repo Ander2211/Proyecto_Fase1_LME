@@ -1,13 +1,3 @@
-/*Los colores lo discutiremos en el grupo*/
-/*Copia desde aqui*/
-
-
-/*No borrar esto son variables para los colores
----Para usar estas variables en css tienes que poner por ejemplo en:
-color :var();  dentro de los parentesis va ir '--primario'
-
-ejemplo: background-color: var(--primario);
-*/
 :root {
     --azul: #1F3B73;
     --morado:#4B296B ;
@@ -27,10 +17,9 @@ ejemplo: background-color: var(--primario);
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* conservando el color del style.css */
+    color: #333; /* Color del texto */
 }
 
 header,
@@ -80,9 +69,7 @@ footer {
     flex: 1;
     position: relative;
     z-index: 1; /* Asegura que el contenido esté sobre la imagen */
-
 }
-
 
 .active{
     transition: all 0.33s ease-out;
@@ -91,11 +78,8 @@ footer {
 }
 .active:hover{
     padding: 7px;
-    
 }
 
-
-/* Añadir espacio debajo de los elementos para el emoji */
 .navbar-nav .nav-item {
     margin-bottom: 0.2rem; /* Ajusta este valor según el tamaño del emoji */
 }
@@ -142,18 +126,7 @@ footer {
      /* Espacio superior para que el título se acomode */
     min-height: calc(100vh - 10rem); /* Asegura que el h1 no baje más allá de la sección */
 }
-/*Hasta aqui*/
 
-
-
-
-/*Empiesen a trabajar desde aqui*/
-
-
-
-
-
-/*el estilo tambien se borra*/
 .morado {
     padding: 2rem;
     background-color: rebeccapurple;
@@ -161,11 +134,25 @@ footer {
     height: 100rem;
 }
 
+/* Añadido desde style.css */
 
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
 
+li {
+    margin-bottom: 10px;
+}
 
+p {
+    margin-bottom: 20px;
+}
 
-
-
-
-
+.galileo-img, .copernico-img {
+    width: 200px; 
+    height: auto; 
+    border: 2px solid #333; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
