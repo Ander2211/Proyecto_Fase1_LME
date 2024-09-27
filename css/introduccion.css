@@ -217,19 +217,16 @@ h2{
 @media (min-width: 768px) {
     .nosotros__img {
         grid-column: 2/3;
+        width:30% ;
         
     }
 }
 
 
-.nosotros__img img{
-    width: 40%;
-display: inline;
-}
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .tema {
         font-size: 4rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
         top: 40vh; /* Ajusta la posición vertical en pantallas pequeñas */
@@ -239,8 +236,19 @@ display: inline;
     }
 
     .nosotros__img img{
-        width: 100%;
+        width: 50%;
+        margin-inline: 20%;
     }
+    #info{
+        padding: 2rem;
+    }
+
+
+}
+
+.nosotros__img img{
+    width: 250px;
+display: inline;
 }
 
 
@@ -249,7 +257,11 @@ display: inline;
 
 
 
+
 @media (max-width: 480px) {
+    #info{
+        padding: 1rem;
+    }
     .tema {
         font-size: 2rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
         top: 40vh; /* Ajusta la posición vertical en pantallas pequeñas */
@@ -274,12 +286,15 @@ display: inline;
 
     border: 3px solid var(--color-fuente) ;
     border-radius: 23px 23px 66px 0px;
+    margin: 0 1rem;
 }
 
 @media (max-width: 480px) {
     .card {
         margin-bottom: 20px; /* Espacio entre las cards en mobile */
     }
+    
+    
 }
 .card-img-top{
 
@@ -296,3 +311,94 @@ display: inline;
         margin-inline: 10rem;
     }
 }
+
+
+
+.banner {
+    background-image: url('../img/La-creacion-de-Adan.webp'); /* Cambia por una imagen representativa del Renacimiento */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: auto;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.section-title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+/* From Uiverse.io by Voxybuns */ 
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_colo);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
