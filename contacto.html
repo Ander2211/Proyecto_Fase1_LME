@@ -85,7 +85,7 @@
                 <!-- /*Empiesen a trabajar desde aqui*/ -->
                 <h2 class="text-center fs-1 pt-4">Contactanos</h2>
                 <div class="message  d-flex justify-content-center">
-                    <form class="formulario " action="https://formsubmit.co/anderhdz06@gmail.com" method="POST">
+                    <form class="formulario " method="POST">
 
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fs-3">Nombre</label>
@@ -98,8 +98,13 @@
                                 aria-describedby="emailHelp">
                         </div>
 
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label fs-3">DUI</label>
+                                <input type="text"  class="form-control" required pattern="[0-9]{8}-[0-9]{1}" title=" 12345678-9 " placeholder="________-_">
+                        </div>
+
                         <div class="form-floating my-5">
-                            <textarea name="message" id="mi-textarea" class="form-control "
+                            <textarea name="message" id="mi-textarea" class="form-control py-lg-5"
                                 placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                             <label for="floatingTextarea" class="text-black fs-4">Mensaje</label>
                         </div>

@@ -145,12 +145,7 @@ footer {
 
 
 /*el estilo tambien se borra*/
-.morado {
-    padding: 2rem;
-    background-color: rebeccapurple;
-    width: 220px;
-    height: 100rem;
-}
+
 
 
 /*Formulario estilos*/
@@ -161,6 +156,7 @@ footer {
     padding: 3rem 2rem;
     border-radius: 30px;
     border:1px solid var(--claro1) ;
+    font-size: .2rem;
 }
 
 #mi-textarea{
