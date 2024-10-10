@@ -67,8 +67,9 @@ footer {
     flex: 1;
     position: relative;
     z-index: 1; /* Asegura que el contenido esté sobre la imagen */
-
 }
+
+
 
 
 .active{

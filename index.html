@@ -1,16 +1,3 @@
-<!-- 
--No borres nada de aqui.
--Copia y pega todo en otro html y los estilos tambien.
--No usen el mismo archivo css, intro.css es de esta pagina.
--La mayoria del diseño responsive ya esta resuelta, pero algunas img o tamaños fuentes se tienen que corregir en @media por que se salen del tamaño de pantalla como tablet y mas comun en celular 
--Hablando de img se tiene que poner para que no solo vaya texto minimo unas 5 cada una, opcional pueden usar Carousel y Card de boostrap para que se vea mejor 
--No procuren hacer tanto css por eso esta boostrap (tengan la documetacion en la mano que el objetivo de boostrap es reducir el tiempo al escribir css ):
-    ~tamaños usen Sizing
-    ~para margin y padding usen Spacing seria: m-1(seria 16px), p-1(es lo mismo)
-    ~tamaño de texto usen Text
-    y asi
--Si algo esta mal y no lo pueden arreglar o tienen duda o sugerencia me llaman 
--->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,51 +29,59 @@
                 <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
                     <ul class="navbar-nav fs-3">
                         <li class="nav-item">
-                            <a class="nav-link active px-sm-5 fw-medium" href="index.html">Inicio</a>
+                            <a class="nav-link active mx-sm-4 px-2 fw-medium" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-5 hover-item fw-medium" href="arte.html">Arte
-                                <span class="emoji">🖼️</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-5 hover-item fw-medium" href="ciencia.html">Ciencia
-                                <span class="emoji">🧪</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-sm-5 hover-item fw-medium" href="legado.html">Legado
-                                <span class="emoji">🏙️</span>
-                            </a>
-                        </li>
-
 
                         <!--Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item dropdown px-sm-4">
+                            <a class="nav-link dropdown-toggle fw-semibold nav-item" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Extras
+                                Renacimiento
                             </a>
                             <ul class="dropdown-menu">
+                                
                                 <li class="nav-item">
-                                    <a class="nav-link px-sm-5 fs-4 hover-item fw-medium" href="galeria.html">Galeria
-                                        <span class="emoji"></span>
+                                    <a class="nav-link px-sm-5 fs-4 hover-item fw-medium" href="arte.html">Arte
+                                        <span class="emoji">🖼️</span>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-sm-5 fs-4  fw-medium" href="creadores.html">Creadores
-                                        <span class="emoji">🧑🏻‍💻</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  px-sm-5 fs-4  fw-medium" href="contacto.html">Contactos
 
+                                <li class="nav-item">
+                                    <a class="nav-link px-sm-5 fs-4 hover-item fw-medium" href="legado.html">Legado
+                                        <span class="emoji">🏙️</span>
                                     </a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link px-sm-5 fs-4 hover-item fw-medium" href="ciencia.html">Ciencia
+                                        <span class="emoji">🧪</span>
+                                    </a>
+                                </li>
+
 
                             </ul>
                         </li>
                         <!--Fin Dropdown-->
+
+
+                        <li class="nav-item">
+                            <a class="nav-link  px-sm-4 fs-3  fw-semibold" href="contacto.html">Contactos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-sm-4 fs-3  fw-semibold" href="creadores.html">Creadores
+                                <span class="emoji">🧑🏻‍💻</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-sm-4 fs-3 hover-item fw-semibold" href="galeria.html">Galeria
+                                <span class="emoji"></span>
+                            </a>
+                        </li>
+                        
+
+
+
                     </ul>
                 </div>
             </div>
@@ -95,11 +90,11 @@
 
         <div class="banner d-flex align-items-center">
             <div class="overlay w-100">
-                <div class="container banner-text" >
+                <div class="container banner-text">
                     <h1 class="display-4">El Renacimiento del Siglo XIX</h1>
                     <p class="lead">Descubre cómo las ideas clásicas influyeron en el arte, la ciencia y la cultura.</p>
                     <a href="#about">
-                        <button >
+                        <button>
                             <span class="button_top"> Saber más </span>
                         </button>
                     </a>
@@ -111,7 +106,7 @@
             <!-- Contenido principal -->
 
 
-            
+
 
             <section id="info" class="px-lg-5">
                 <h2 class="p-2 fs-1">Introducción general al Renacimiento.</h2>
@@ -163,7 +158,7 @@
                             Renacimiento promovió avances significativos en las artes, ciencias y educación, sentando
                             las bases de la modernidad y transformando profundamente la cultura europea.
                         </p>
-                        
+
                     </div>
                     <div class="nosotros__img">
                         <img loading="lazy" src="img/Mona-Lisa-by-Leonardo-da-Vinci-1140x1699 (1).jpg" alt="" />
