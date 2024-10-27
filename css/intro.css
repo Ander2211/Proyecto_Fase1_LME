@@ -103,10 +103,10 @@ footer {
 
 .hover-item:hover .emoji {
     visibility: visible;
-    opacity: 1;
+    opacity: 1; /* Hacer el emoji visible */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px/*aqui se define el tamaño de las pantallas*/) {
     .main-content {
         flex-direction: column;
         
@@ -124,8 +124,8 @@ footer {
 
 #info {
     background:var(--morado);
-    
-    min-height: calc(100vh - 10rem);
+     /* Espacio superior para que el título se acomode */
+    min-height: calc(100vh - 10rem); /* Asegura que el h1 no baje más allá de la sección */
 }
 
 .morado {
@@ -135,7 +135,7 @@ footer {
     height: 100rem;
 }
 
-
+/* Añadido desde style.css */
 
 ul {
     list-style-type: disc;
@@ -158,23 +158,20 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-
 .title {
     color: #d6aa40; 
     font-size: 2rem;
     font-weight: bold;
 }
 
-
 h1, h2, h3 {
-    color: #d6aa40; 
-}
-
-
-.nav-link, .dropdown-toggle {
-    color: #d6aa40 !important; 
+    color: #d6aa40;
 }
 
 strong, .hover-item {
     color: #d6aa40;
+}
+
+.navbar .nav-link[href="galeria.html"] {
+    color: inherit !important;
 }
