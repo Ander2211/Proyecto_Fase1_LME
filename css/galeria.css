@@ -173,6 +173,10 @@ footer {
 }
 
 
+img {
+    display: block;
+    margin: 20px auto;
+}
 
 
 /*FIN Formulario estilos*/
