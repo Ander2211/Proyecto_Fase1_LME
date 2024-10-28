@@ -172,6 +172,10 @@ footer {
     }
 }
 
+img {
+    padding: 5px; 
+}
+
 
 img {
     display: block;
