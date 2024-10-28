@@ -175,3 +175,10 @@ strong, .hover-item {
 .navbar .nav-link[href="galeria.html"] {
     color: inherit !important;
 }
+
+.main-content img {
+    max-width: 100%;    
+    height: auto;       
+    display: block;  
+    margin: 0 auto;   
+}
